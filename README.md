@@ -2,8 +2,7 @@
 
 FormThief is a project designed for spoofing Windows desktop login applications using WinForms and WPF. Below is an example run for KeePass (additional examples can be found in the 'Demos' folder):
 
-[FormThief-KeePass.webm](https://github.com/mlcsec/FormThief-NewTest/assets/47215311/6a903ea2-1cc4-4039-a7fc-8ecc9415d693)
-
+[FormThief-KeePass.webm](https://github.com/mlcsec/FormThief/assets/47215311/2ef4e9dc-785b-459f-b530-65801f6e0a22)
 
 <br>
 
@@ -59,7 +58,8 @@ beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\CiscoAnyConnect.exe --as
 ```
 beacon> bofnet_executeassembly CiscoAnyConnect target.vpn.hostname
 ```
-![image](https://github.com/mlcsec/FormThief-NewTest/assets/47215311/963da32b-413a-46cc-b8e2-815aa4daa718)
+
+![cisco](https://github.com/mlcsec/FormThief/assets/47215311/30dbc073-23b5-48bd-bb79-2fa60fad20be)
 
 
 ## KeePass
@@ -71,7 +71,7 @@ beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\KeePass.exe --assemblyar
 beacon> bofnet_executeassembly KeePass "C:\path\to\target\passwords.kdbx"
 ```
 
-![image](https://github.com/mlcsec/FormThief-NewTest/assets/47215311/34072b92-0b37-48cc-8c70-e0d806ca15c6)
+![keepass](https://github.com/mlcsec/FormThief/assets/47215311/12bcd4d4-890e-4670-850a-57d6b13475cb)
 
 
 ## LastPass
@@ -83,7 +83,7 @@ beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\LastPass.exe --assemblya
 beacon> bofnet_executeassembly LastPass "victim@domain.com"
 ```
 
-![image](https://github.com/mlcsec/FormThief-NewTest/assets/47215311/68626b1b-528b-4631-a882-f5e852367894)
+![lastpass](https://github.com/mlcsec/FormThief/assets/47215311/77acf1c6-50c6-4579-9bbc-51cb6f551ce5)
 
 
 ## OpenVPN
@@ -95,7 +95,7 @@ beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\OpenVPN.exe --assemblyar
 beacon> bofnet_executeassembly OpenVPN target.vpn.profile
 ```
 
-![image](https://github.com/mlcsec/FormThief-NewTest/assets/47215311/11749727-cac9-4fe7-97db-331ae4a44975)
+![openvpn](https://github.com/mlcsec/FormThief/assets/47215311/79166ad8-973b-40cd-8882-1b646bba88f7)
 
 
 ## Windows Security (Outlook)
@@ -109,7 +109,7 @@ Simple workaround for issues running via `inlineExecute-Assembly` or `bofnet_exe
 beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\wpfRunner.exe --assemblyargs "victim@domain.com"
 ```
 
-![image](https://github.com/mlcsec/FormThief-NewTest/assets/47215311/cf642b1a-3593-4a8c-9c13-6fb30ce1f3a9)
+![outlook](https://github.com/mlcsec/FormThief/assets/47215311/d4f92662-ca56-4afb-afd3-9e5ca5dbd721)
 
 
 <br>
