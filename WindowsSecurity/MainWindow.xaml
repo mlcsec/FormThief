@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        WindowStartupLocation="Manual"
+        Title="    Windows Security" Height="319" Width="456" Background="#FFF1F1F1" ResizeMode="NoResize" Icon="/Microsoft_Outlook_2013_logo.png">
+    <ui:SimpleStackPanel Spacing="24">
+        <TextBlock x:Name="main_header" Style="{StaticResource HeaderTextBlockStyle}" Margin="26,-1,34,1" FontSize="20" FontWeight="Normal" ><Run Language="en-gb" Text="Microsoft Outlook"/></TextBlock>
+        <TextBlock x:Name="connecting_text" Margin="26,-11,108,-10" Text="Connecting to " />
+        <TextBox x:Name="email_field" Margin="26,8,125,-8" />
+        <PasswordBox x:Name="password_field" Margin="26,-4,125,4" Visibility="Collapsed"/>
+
+        <TextBox x:Name="passwordPlaceholder" Margin="26,-4,125,4" VerticalAlignment="Top" Text="Password"
+             GotFocus="PasswordPlaceholder_GotFocus" Visibility="Visible" Foreground="Gray"/>
+
+        <CheckBox x:Name="checkbox" Margin="28,-8,0,0" VerticalAlignment="Top" Content="Remember my credentials"/>
+        <Button x:Name="ok_button" Content="OK" Height="35" Margin="26,-4,0,0" VerticalAlignment="Top" Width="197" BorderThickness="0" Click="OkButton_Click"/>
+        <Button x:Name="cancel_button" Content="Cancel" Height="35" Margin="230,-59,0,0" VerticalAlignment="Top" Width="197" BorderThickness="0" Click="CancelButton_Click"/>
+    </ui:SimpleStackPanel>
+
+
+</Window>
